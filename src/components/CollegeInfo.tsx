@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 import { COLLEGE_NAME, COLLEGE_ADDRESS, PRINCIPAL_NAME, SPOC_NAME, SPOC_DEPT, SPOC_ROLE, SPOC_ID } from '../constants';
 
@@ -26,7 +26,7 @@ const CollegeInfo = () => (
           </motion.p>
         </div>
         <motion.img
-          src="/image%202.PNG"
+          src="/images/image%202.PNG"
           alt="College Logo"
           className="h-32 w-auto drop-shadow-xl"
           animate={{ scale: [1, 1.08, 1] }}
@@ -38,7 +38,7 @@ const CollegeInfo = () => (
     {/* Images Section - Two Column */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <motion.img
-        src="/image%205.PNG"
+        src="/images/image%205.PNG"
         alt="Campus View"
         className="w-full h-64 object-cover rounded-3xl shadow-xl border border-white/20"
         initial={{ opacity: 0, x: -20 }}
@@ -47,7 +47,7 @@ const CollegeInfo = () => (
         whileHover={{ scale: 1.02 }}
       />
       <motion.img
-        src="/image%201.PNG"
+        src="/images/image%201.PNG"
         alt="College Building"
         className="w-full h-64 object-cover rounded-3xl shadow-xl border border-white/20"
         initial={{ opacity: 0, x: 20 }}
@@ -83,7 +83,7 @@ const CollegeInfo = () => (
         whileHover={{ y: -5 }}
       >
         <motion.img
-          src="/image%203.PNG"
+          src="/images/image%203.PNG"
           alt="Principal"
           className="w-20 h-20 rounded-xl object-cover mb-4 shadow-lg mx-auto"
           initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ const CollegeInfo = () => (
         whileHover={{ y: -5 }}
       >
         <motion.img
-          src="/image%204.PNG"
+          src="/images/image%204.PNG"
           alt="SPoC"
           className="w-20 h-20 rounded-xl object-cover mb-4 shadow-lg mx-auto"
           initial={{ opacity: 0 }}

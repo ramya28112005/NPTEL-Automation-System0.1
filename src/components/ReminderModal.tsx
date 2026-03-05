@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // icon removed
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Department } from '../types';
 import { dataService } from '../services/dataService';
 
@@ -64,16 +64,16 @@ const ReminderModal = ({ type, onClose }: ReminderModalProps) => {
       <motion.div 
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden"
+        className="bg-slate-800 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden border border-slate-600"
       >
-        <div className="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-          <h3 className="text-2xl font-bold text-slate-800">{type} Reminder</h3>
-          <button onClick={onClose} className="text-slate-400 hover:text-slate-600 transition-colors">
+        <div className="p-8 border-b border-slate-600 flex justify-between items-center bg-slate-700">
+          <h3 className="text-2xl font-bold text-white">{type} Reminder</h3>
+          <button onClick={onClose} className="text-slate-300 hover:text-white transition-colors">
             {/* close icon */}
           </button>
         </div>
         
-        <div className="p-8 space-y-6 max-h-[70vh] overflow-y-auto">
+        <div className="p-8 space-y-6 max-h-[70vh] overflow-y-auto bg-slate-800">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Start Date</label>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { AnimatedBackground } from './AnimatedBackground';
 import { Building, User, Lock } from 'lucide-react';
 
@@ -28,7 +28,7 @@ const Login = ({ onLogin }: LoginProps) => {
       >
         <div className="flex flex-col items-center mb-10">
           <motion.img
-            src="/image%202.PNG"
+            src="/images/image%202.PNG"
             alt="CTTEWC Logo"
             className="h-24 w-auto drop-shadow-xl mb-4"
           />

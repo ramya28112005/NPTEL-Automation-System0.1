@@ -29,6 +29,15 @@
   .btn-gradient {
     @apply px-6 py-3 font-bold rounded-lg text-white bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:from-[#8B5CF6] hover:to-[#6366F1] transition-all;
   }
+
+  /* Input and textarea styling */
+  input, textarea {
+    @apply text-slate-900;
+  }
+
+  input::placeholder, textarea::placeholder {
+    @apply text-slate-500;
+  }
 }
 
 .sidebar-item-active {

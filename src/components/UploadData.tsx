@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
 // icons removed
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Semester, Department } from '../types';
 import { dataService } from '../services/dataService';
 

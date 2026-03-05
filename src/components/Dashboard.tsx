@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Building, BarChart2 } from 'lucide-react';
 
 import { 

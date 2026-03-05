@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MENU_ITEMS } from '../constants';
 import { Semester } from '../types';
 import { AnimatedBackground } from './AnimatedBackground';

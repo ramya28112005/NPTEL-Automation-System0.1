@@ -19,8 +19,13 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const fetchCurrentSemester = async () => {
-    const semesters = await dataService.getSemesters();
-    setCurrentSemester(semesters.find((s: Semester) => s.is_active === 1) || null);
+    try {
+      const semesters = await dataService.getSemesters();
+      setCurrentSemester(semesters.find((s: Semester) => s.is_active === 1) || null);
+    } catch (error) {
+      console.error('Failed to fetch semesters:', error);
+      setCurrentSemester(null);
+    }
   };
 
   useEffect(() => {

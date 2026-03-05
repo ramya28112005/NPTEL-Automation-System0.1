@@ -1,19 +1,49 @@
-import { Building, UploadCloud, Users, Settings, BarChart2, Grid } from 'lucide-react';
+import {
+  Building,
+  Upload,
+  UserCheck,
+  Zap,
+  BarChart3,
+  FileText,
+} from 'lucide-react';
 
 export const MENU_ITEMS = [
-  { id: 'college-info', label: 'College Info', icon: <Building size={20} /> },
-  { id: 'upload-data', label: 'Upload Data', icon: <UploadCloud size={20} /> },
-  { id: 'hod-setup', label: 'HOD Setup', icon: <Users size={20} /> },
-  { id: 'automation', label: 'Automation', icon: <Settings size={20} /> },
-  { id: 'reports', label: 'Reports', icon: <BarChart2 size={20} /> },
-  { id: 'dashboard', label: 'Dashboard', icon: <Grid size={20} /> },
+  {
+    id: 'college-info',
+    label: 'College Info',
+    icon: <Building className="w-5 h-5" />,
+  },
+  {
+    id: 'upload-data',
+    label: 'Upload Data',
+    icon: <Upload className="w-5 h-5" />,
+  },
+  {
+    id: 'hod-setup',
+    label: 'HOD Setup',
+    icon: <UserCheck className="w-5 h-5" />,
+  },
+  {
+    id: 'automation',
+    label: 'Automation',
+    icon: <Zap className="w-5 h-5" />,
+  },
+  {
+    id: 'dashboard',
+    label: 'Dashboard',
+    icon: <BarChart3 className="w-5 h-5" />,
+  },
+  {
+    id: 'reports',
+    label: 'Reports',
+    icon: <FileText className="w-5 h-5" />,
+  },
 ];
 
-export const COLLEGE_NAME = "Chevalier T. Thomas Elizabeth College for Women";
-export const COLLEGE_ADDRESS = "No: 16, St. Mary's Road, Maryland, Sembium, Perambur, Chennai, Tamil Nadu – 600011";
-export const PRINCIPAL_NAME = "Dr. S. Sridevi";
-export const SPOC_NAME = "Mrs. V. Suganthi";
-export const SPOC_ROLE = "Assistant Professor";
-
-export const SPOC_ID = "SPOC NPTEL";
-export const SPOC_DEPT = "Department of Computer Science";
+export const COLLEGE_NAME = 'CTTEWC';
+export const COLLEGE_ADDRESS = 'College Address';
+export const PRINCIPAL_NAME = 'Principal Name';
+export const SPOC_NAME = 'SPOC Name';
+export const SPOC_DEPT = 'SPOC Department';
+export const SPOC_ROLE = 'SPOC Role';
+export const SPOC_ID = 'SPOC ID';
