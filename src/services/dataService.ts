@@ -1,6 +1,6 @@
 import { Semester, Department, CourseStats } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 export const dataService = {
   async createSemester(year: number, period: string): Promise<{ id: number } | { success: boolean }> {
