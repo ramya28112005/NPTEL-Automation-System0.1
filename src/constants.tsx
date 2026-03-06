@@ -40,10 +40,10 @@ export const MENU_ITEMS = [
   },
 ];
 
-export const COLLEGE_NAME = 'CTTEWC';
-export const COLLEGE_ADDRESS = 'College Address';
-export const PRINCIPAL_NAME = 'Principal Name';
-export const SPOC_NAME = 'SPOC Name';
-export const SPOC_DEPT = 'SPOC Department';
-export const SPOC_ROLE = 'SPOC Role';
-export const SPOC_ID = 'SPOC ID';
+export const COLLEGE_NAME = 'CTTE College for Women';
+export const COLLEGE_ADDRESS = `16, St.Mary's Road, Gollam Thottam, Maryland Sembiyan, Perambur, Chennai, Tamil Nadu 600011`;
+export const PRINCIPAL_NAME = 'Dr. S. Sridevi';
+export const SPOC_NAME = 'V. Sugnathi';
+export const SPOC_DEPT = 'Department of Computer Science';
+export const SPOC_ROLE = 'Assistant Professor';
+export const SPOC_ID = 'SPOC NPTEL';
